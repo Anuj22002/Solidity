@@ -1,11 +1,11 @@
-# Solidity
-A token called "MyToken" is represented by this  Solidity contract.
-Public variables in the contract are used to hold information about the token, including its name, acronym, and total supply.
-Additionally, it provides a mapping between addresses and balances that will record the balance of each address holding the token.
-The mint and burn functionalities are shared by the contract.
-An address and a value are the two parameters needed for the mint function. When this function is invoked, 
-the token's overall supply is increased by the specified amount, as well as the balance at the specified address.
-An address and a value are the other two parameters required by the burn function. When this function is invoked, it determines 
-if the balance at the specified address is more than or equal to the amount that should be burned. 
-If so, it reduces the supply of all tokens by the specified amount and reduces the balance at the specified address by the same amount.
-On the Ethereum network, a custom token can be created using this contract as a template.
+# MyToken Smart Contract
+
+This is a simple Ethereum smart contract written in Solidity. The contract implements a basic ERC20 token with the following features:
+
+Name: "Anuj"
+Symbol: "Aj"
+Total supply: 0 (initially)
+Minting: The mint function allows anyone to create new tokens by specifying the recipient's address and the amount to be minted.
+Burning: The burn function allows token holders to destroy their tokens by specifying the amount to be burned.
+Usage
+To use this smart contract, you will need an Ethereum wallet that supports interacting with smart contracts, such as MetaMask or MyEtherWallet. You can deploy the contract to the Ethereum network using a tool like Remix or Truffle. Once deployed, you can interact with the contract using its ABI (Application Binary Interface) and address.
